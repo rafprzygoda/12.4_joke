@@ -8,6 +8,10 @@ var paragraph = document.getElementById('joke');
 function getJoke() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
+    if(xhr.status == 200) {
+	       console.log(xhr.response);
+    }
+    
     xhr.addEventListener('load', function(){
         var response = JSON.parse(xhr.response);
         paragraph.innerHTML = response.value.joke;
