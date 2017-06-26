@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Freckle+Face');
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 500px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-family: 'Freckle Face', cursive;
+    text-shadow: 2px 2px 2px #ccc;
+    font-size: 35px;
+}
