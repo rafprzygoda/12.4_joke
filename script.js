@@ -14,14 +14,6 @@ function getJoke() {
     
     xhr.addEventListener('load', function(){
         var response = JSON.parse(xhr.response);
-        //paragraph.innerHTML = response.value.joke;
-        /*var joke = 'brak dowcipu';
-        
-        if (response.value && response.value.joke) {
-            joke = response.value.joke;
-        }
-        paragraph.innerHTML = joke;*/
-        
         paragraph.innerHTML = response.value && response.value.joke ? response.value.joke : 'brak dowcipu';
     });
     
